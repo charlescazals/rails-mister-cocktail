@@ -1,1 +1,16 @@
-new.html.erb
+<h1>Create a new Cocktail:</h1>
+<!-- app/views/restaurants/_form.html.erb -->
+<%= simple_form_for [@cocktail] do |f| %>
+  <% if @cocktail.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :name, placeholder: "Mojito" %>
+  <%= f.submit "Create Cocktail", class: "btn btn-success" %>
+<% end %>
