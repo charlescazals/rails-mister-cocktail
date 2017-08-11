@@ -1,4 +1,5 @@
 <h1><%= @cocktail.name %></h1>
+<h4><%= link_to "Delete", cocktail_path(@cocktail), data: {:confirm => 'Are you sure?'}, method: :delete %></h4>
 
 <h3>Recipe:</h3>
 <ul>
@@ -19,7 +20,7 @@
       </ul>
     </div>
   <% end %>
-  <%= f.input :description , placeholder: 'ex: quantity' %>
+  <%= f.input :description , placeholder: '1 teaspoon', label: "Quantity" %>
   <%= f.input :ingredient_id, collection: Ingredient.order(name: :asc).all %>
   <%= f.submit "Add ingredient", class: 'btn btn-primary' %>
 

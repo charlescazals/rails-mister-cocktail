@@ -8,7 +8,6 @@ class DosesController < ApplicationController
     else
       render "cocktails/show"
     end
-
   end
 
   def destroy
