@@ -16,7 +16,6 @@ gem 'autoprefixer-rails'
 # Add this line if you use Rails 5.1
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.5'
-
 gem 'figaro'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
@@ -63,3 +62,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', group: [ :test ]
 gem 'rails-controller-testing', group: [ :test ]
+
+gem 'cloudinary', '1.1.7'
+gem 'attachinary', github: 'assembler/attachinary'
+gem 'jquery-fileupload-rails'

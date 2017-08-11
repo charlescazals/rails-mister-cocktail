@@ -1,4 +1,6 @@
-<h1>Create a new Cocktail:</h1>
+<div class="page_title">
+  <h1>Create a new Cocktail:</h1>
+</div>
 <!-- app/views/restaurants/_form.html.erb -->
 <%= simple_form_for [@cocktail] do |f| %>
   <% if @cocktail.errors.any? %>
@@ -12,5 +14,6 @@
   <% end %>
 
   <%= f.input :name, placeholder: "Mojito" %>
+  <%= f.input :photo, as: :attachinary %>
   <%= f.submit "Create Cocktail", class: "btn btn-success" %>
 <% end %>
