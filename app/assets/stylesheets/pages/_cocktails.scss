@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(13deg, rgba(248, 247, 7, 0.48), #ffffff);
+}
+
 .page_title{
   margin-left: 100px
 }
@@ -15,10 +19,6 @@
   padding: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-  background-image: url("https://pixabay.com/get/ef37b20b2bfc1c22d9584518a33219c8b66ae3d019b3154695f2c97f/martini-glass-623438_1920.jpg");
-  background-color: #cccccc;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 80vh;
   color: white;
 }
